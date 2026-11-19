@@ -1,0 +1,181 @@
+ligne	colonne	élément (infobulle)
+1	1	(case vide, ou icône sans infobulle — voir capture 06b)
+1	2	(case vide, ou icône sans infobulle — voir capture 06b)
+1	3	(case vide, ou icône sans infobulle — voir capture 06b)
+1	4	(case vide, ou icône sans infobulle — voir capture 06b)
+1	5	(case vide, ou icône sans infobulle — voir capture 06b)
+1	6	(case vide, ou icône sans infobulle — voir capture 06b)
+1	7	Vis FB90.
+1	8	Goujon.
+1	9	Tige filetée.
+1	10	(case vide, ou icône sans infobulle — voir capture 06b)
+1	11	Ressort hélicoidal de compression.
+1	12	(case vide, ou icône sans infobulle — voir capture 06b)
+1	13	(case vide, ou icône sans infobulle — voir capture 06b)
+1	14	Empilage de rondelles coniques.
+1	15	(case vide, ou icône sans infobulle — voir capture 06b)
+2	1	Vis H (vue de dessus).
+2	2	Vis Q (vue de dessus).
+2	3	Vis Chc (vue de dessus).
+2	4	Vis C (vue de dessus).
+2	5	Vis CL (vue de dessus).
+2	6	Vis à bout plat.
+2	7	Vis à bout pointu.
+2	8	Vis à bout à cuvette.
+2	9	Vis à téton long.
+2	10	Vis à téton court.
+2	11	Goupille élastique (Mecanindus).
+2	12	Goupille type A.
+2	13	Goupille type B.
+2	14	Goupille type C.
+2	15	Goupille conique.
+3	1	Ecrou H vu sur 3 pans.
+3	2	Ecrou freiné (Nylstop).
+3	3	Ecrou à crénaux.
+3	4	(case vide, ou icône sans infobulle — voir capture 06b)
+3	5	(case vide, ou icône sans infobulle — voir capture 06b)
+3	6	Ecrou à embase.
+3	7	Ecrou H vu sur 2 pans.
+3	8	(case vide, ou icône sans infobulle — voir capture 06b)
+3	9	Ecrou à encoches KM et rondelle frein MB.
+3	10	(case vide, ou icône sans infobulle — voir capture 06b)
+3	11	(case vide, ou icône sans infobulle — voir capture 06b)
+3	12	(case vide, ou icône sans infobulle — voir capture 06b)
+3	13	(case vide, ou icône sans infobulle — voir capture 06b)
+3	14	(case vide, ou icône sans infobulle — voir capture 06b)
+3	15	(case vide, ou icône sans infobulle — voir capture 06b)
+4	1	Ecrou H (vue de dessus).
+4	2	Ecrou freiné Nylstop (vue de dessus).
+4	3	Ecrou à crénaux (vue de dessus).
+4	4	Ecrou à embase (vue de dessus).
+4	5	(case vide, ou icône sans infobulle — voir capture 06b)
+4	6	Rondelle plate.
+4	7	Rondelle Grower.
+4	8	Rondelle éventail.
+4	9	Ecrou à encoches KM et frein (vue de dessus).
+4	10	(case vide, ou icône sans infobulle — voir capture 06b)
+4	11	Anneau élastique pour arbre.
+4	12	Anneau élastique pour alésage.
+4	13	Segment d'arrêt pour arbre INA.
+4	14	Segment d'arrêt pour alésage INA.
+4	15	(case vide, ou icône sans infobulle — voir capture 06b)
+5	1	Roulement rigide à billes.
+5	2	Roulement rigide à billes à rainure.
+5	3	Roulement à contact oblique.
+5	4	Roulement à contact oblique pour broche.
+5	5	Roulement double à contact oblique.
+5	6	Roulement à 4 points de contact.
+5	7	Roulement sphérique à billes.
+5	8	Roulement sphérique à billes (bague élargie).
+5	9	Roulement sphérique à 1 rangée de tonnelets.
+5	10	Roulement sphérique à 2 rangées de galets.
+5	11	Douille à billes INA.
+5	12	(case vide, ou icône sans infobulle — voir capture 06b)
+5	13	(case vide, ou icône sans infobulle — voir capture 06b)
+5	14	(case vide, ou icône sans infobulle — voir capture 06b)
+5	15	(case vide, ou icône sans infobulle — voir capture 06b)
+6	1	Roulement cylindrique NU.
+6	2	Roulement cylindrique NJ.
+6	3	Roulement cylindrique NUP.
+6	4	Roulement cylindrique N.
+6	5	(case vide, ou icône sans infobulle — voir capture 06b)
+6	6	Roulement cylindrique NNU.
+6	7	(case vide, ou icône sans infobulle — voir capture 06b)
+6	8	Roulement à galets coniques.
+6	9	(case vide, ou icône sans infobulle — voir capture 06b)
+6	10	(case vide, ou icône sans infobulle — voir capture 06b)
+6	11	(case vide, ou icône sans infobulle — voir capture 06b)
+6	12	(case vide, ou icône sans infobulle — voir capture 06b)
+6	13	(case vide, ou icône sans infobulle — voir capture 06b)
+6	14	(case vide, ou icône sans infobulle — voir capture 06b)
+6	15	(case vide, ou icône sans infobulle — voir capture 06b)
+7	1	Roulement à aiguilles.
+7	2	Douille à aiguilles.
+7	3	Douille à aiguilles avec fond.
+7	4	Cage à aiguilles.
+7	5	Roulement à deux rangées d'aiguilles.
+7	6	(case vide, ou icône sans infobulle — voir capture 06b)
+7	7	(case vide, ou icône sans infobulle — voir capture 06b)
+7	8	(case vide, ou icône sans infobulle — voir capture 06b)
+7	9	Galet d'appui à rouleaux.
+7	10	Galet de came avec axe INA.
+7	11	Rotule lisse frittée.
+7	12	Rotule lisse frittée à contact oblique.
+7	13	Rotule lisse frittée axiale.
+7	14	(case vide, ou icône sans infobulle — voir capture 06b)
+7	15	(case vide, ou icône sans infobulle — voir capture 06b)
+8	1	Butée à aiguilles avec cage en tole.
+8	2	Butée à aiguilles.
+8	3	Butée double effet centrée sur alésage.
+8	4	Butée double effet centrée sur arbre.
+8	5	Butée à billes simple effet.
+8	6	Butée à billes simple effet, appui sphérique.
+8	7	Butée à billes double effet.
+8	8	Butée à billes double effet, appuis sphérique.
+8	9	Butée à galets cylindriques.
+8	10	Butée à rotule sur rouleaux.
+8	11	Coussinet cylindrique à collerette.
+8	12	Coussinet cylindrique.
+8	13	Palier lisse fritté sphérique.
+8	14	(case vide, ou icône sans infobulle — voir capture 06b)
+8	15	(case vide, ou icône sans infobulle — voir capture 06b)
+9	1	Joint à lèvres type IE (?)
+9	2	Joint à lèvres type IELR.
+9	3	Joint à lèvres type IEL.
+9	4	Joint à lèvres type IE.
+9	5	(case vide, ou icône sans infobulle — voir capture 06b)
+9	6	Joint V-RING type A ou S (?).
+9	7	(case vide, ou icône sans infobulle — voir capture 06b)
+9	8	(case vide, ou icône sans infobulle — voir capture 06b)
+9	9	(case vide, ou icône sans infobulle — voir capture 06b)
+9	10	(case vide, ou icône sans infobulle — voir capture 06b)
+9	11	Bout d'arbre conique fileté.
+9	12	Bout d'arbre conique taraudé.
+9	13	Cannelures droites.
+9	14	Clavette longitudinale.
+9	15	(case vide, ou icône sans infobulle — voir capture 06b)
+10	1	Gorge pour joint torique.
+10	2	Joint torique dynamique.
+10	3	Joint torique statique.
+10	4	Joint de translation BAL SEAL.
+10	5	Joint composite LUBRORING.
+10	6	Joint racleur de tige.
+10	7	Membrane Bellofram.
+10	8	(case vide, ou icône sans infobulle — voir capture 06b)
+10	9	(case vide, ou icône sans infobulle — voir capture 06b)
+10	10	(case vide, ou icône sans infobulle — voir capture 06b)
+10	11	Entretoise.
+10	12	(case vide, ou icône sans infobulle — voir capture 06b)
+10	13	(case vide, ou icône sans infobulle — voir capture 06b)
+10	14	(case vide, ou icône sans infobulle — voir capture 06b)
+10	15	(case vide, ou icône sans infobulle — voir capture 06b)
+11	1	Profil rond, NF A 45-003/411.
+11	2	Profil hexagonal, NF A 45-005/413.
+11	3	Profil carré, NF A 45-004/412.
+11	4	Profil plat, NF A 45-005.
+11	5	Tube mécanique, NF A 49-310/311.
+11	6	(case vide, ou icône sans infobulle — voir capture 06b)
+11	7	(case vide, ou icône sans infobulle — voir capture 06b)
+11	8	(case vide, ou icône sans infobulle — voir capture 06b)
+11	9	(case vide, ou icône sans infobulle — voir capture 06b)
+11	10	(case vide, ou icône sans infobulle — voir capture 06b)
+11	11	Engrenage parallèle droit.
+11	12	Engrenage conique droit.
+11	13	(case vide, ou icône sans infobulle — voir capture 06b)
+11	14	(case vide, ou icône sans infobulle — voir capture 06b)
+11	15	(case vide, ou icône sans infobulle — voir capture 06b)
+12	1	Poutrelle UAP NF A 45-255.
+12	2	Poutrelle UPN NF A 45-007.
+12	3	Poutrelle IPE NF A 45-… (n° tronqué).
+12	4	Poutrelle IPN NF A 45-… (n° tronqué).
+12	5	Poutrelle HEA HEB,HEM.
+12	6	Cornière à ailes egales, NF A 45-009.
+12	7	Cornière à ailes inegales, NF A 45-010.
+12	8	Profil en T, NF A 45-008.
+12	9	(case vide, ou icône sans infobulle — voir capture 06b)
+12	10	Profil en C, (Aciérie de la Seine).
+12	11	Profil en OMEGA, (Aciérie de la Seine).
+12	12	Profil chemin de roulement (?), (Aciérie de la Seine).
+12	13	(case vide, ou icône sans infobulle — voir capture 06b)
+12	14	(case vide, ou icône sans infobulle — voir capture 06b)
+12	15	(case vide, ou icône sans infobulle — voir capture 06b)

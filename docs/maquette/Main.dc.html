@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Écran principal modernisé</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#0a5bc4}a:hover{color:#073f88}
+</style>
+</helmet>
+<div style="min-height: 920px; display: flex; flex-direction: column; background: #d7dbe1; font-family: Inter, system-ui, -apple-system, sans-serif; color: #1d1f23">
+<div style="display: flex; align-items: center; flex-wrap: wrap; column-gap: 18px; row-gap: 2px; min-height: 28px; padding: 0 16px; background: #f4f4f6; border-bottom: 1px solid #c3c7ce; font-size: 13px">
+<span style="font-weight: 700">[NOM DU LOGICIEL]</span>
+<span style="padding: 2px 0">Fichier</span><span style="padding: 2px 0">Edition</span><span style="padding: 2px 0">Gmac</span><span style="padding: 2px 0">Groupe</span><span style="padding: 2px 0">Métier</span><span style="padding: 2px 0">Outils</span><span style="padding: 2px 0">Préférences</span><span style="padding: 2px 0">Fenêtres</span><span style="padding: 2px 0">Aide</span>
+</div>
+<div style="flex: 1; display: flex; padding: 24px">
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; background: #f6f6f8; border: 1px solid #b4b9c1; border-radius: 12px; box-shadow: 0 18px 40px rgba(20, 24, 31, 0.22); overflow: hidden">
+<div style="display: flex; align-items: center; gap: 8px; height: 40px; padding: 0 14px; background: #ececf0; border-bottom: 1px solid #d9dce1">
+<span aria-hidden="true" style="width: 12px; height: 12px; border-radius: 6px; background: #ff5f57"></span>
+<span aria-hidden="true" style="width: 12px; height: 12px; border-radius: 6px; background: #febc2e"></span>
+<span aria-hidden="true" style="width: 12px; height: 12px; border-radius: 6px; background: #28c840"></span>
+<div style="flex: 1; text-align: center; font-size: 13px; font-weight: 600">BROCHE.des <span style="font-weight: 400; color: #555b64">— Format A1H · Échelle 1</span></div>
+<span aria-hidden="true" style="width: 52px"></span>
+</div>
+<div style="flex: 1; display: flex; min-height: 700px">
+<div style="flex: none; width: {{barW}}; display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 10px 0; background: #f6f6f8; border-right: 1px solid #d9dce1">
+<button aria-label="Menu de Base (barre d’espace)" style="width: {{btnW}}; height: {{btnH}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; padding: 0; border-radius: 10px; border: 1px solid #a9bfe3; background: #e4ebf7; color: #2b2f36; font: inherit; cursor: pointer; --fam: #1f9d55;"><svg width="{{iconPx}}" height="{{iconPx}}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="3" y1="8.5" x2="21" y2="8.5"/><line x1="3" y1="14" x2="21" y2="14"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg><span style="font-size: 10px; font-weight: 700; letter-spacing: 0.06em; color: #2b2f36">BASE</span></button>
+<button aria-label="Menu métier Mécanique" style="width: {{btnW}}; height: {{btnH}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; padding: 0; border-radius: 10px; border: 1px solid transparent; background: transparent; color: #2b2f36; font: inherit; cursor: pointer;"><svg width="{{iconPx}}" height="{{iconPx}}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="3.5" r="0.01"/><circle cx="12" cy="6.5" r="1.2"/><circle cx="17.5" cy="12" r="1.2"/><circle cx="12" cy="17.5" r="1.2"/><circle cx="6.5" cy="12" r="1.2"/></svg><span style="font-size: 10px; font-weight: 700; letter-spacing: 0.06em; color: #2b2f36">MECA</span></button>
+<button aria-label="Calculs" style="width: {{btnW}}; height: {{btnH}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; padding: 0; border-radius: 10px; border: 1px solid transparent; background: transparent; color: #2b2f36; font: inherit; cursor: pointer;"><svg width="{{iconPx}}" height="{{iconPx}}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><text x="12" y="11" font-size="8.5" font-weight="600" text-anchor="middle" font-family="Georgia, serif" fill="currentColor" stroke="none">πd²</text><line x1="5" y1="13.5" x2="19" y2="13.5"/><text x="12" y="21" font-size="8" font-weight="600" text-anchor="middle" font-family="Georgia, serif" fill="currentColor" stroke="none">4</text></svg><span style="font-size: 10px; font-weight: 700; letter-spacing: 0.06em; color: #2b2f36">CALCULS</span></button>
+<span aria-hidden="true" style="width: 40px; height: 1px; background: #d9dce1; margin: 4px 0"></span>
+<button aria-label="Traceur (impression)" style="width: {{btnW}}; height: {{btnH}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; padding: 0; border-radius: 10px; border: 1px solid transparent; background: transparent; color: #2b2f36; font: inherit; cursor: pointer;"><svg width="{{iconPx}}" height="{{iconPx}}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 9 V3 H17 V9"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 14 H17 V21 H7 Z"/><circle cx="17.5" cy="12" r="0.6"/></svg></button>
+<button aria-label="Calculatrice" style="width: {{btnW}}; height: {{btnH}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; padding: 0; border-radius: 10px; border: 1px solid transparent; background: transparent; color: #2b2f36; font: inherit; cursor: pointer;"><svg width="{{iconPx}}" height="{{iconPx}}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2.5" width="14" height="19" rx="2"/><rect x="7.5" y="5" width="9" height="4" rx="1"/><circle cx="9" cy="13" r="0.8"/><circle cx="12" cy="13" r="0.8"/><circle cx="15" cy="13" r="0.8"/><circle cx="9" cy="16.5" r="0.8"/><circle cx="12" cy="16.5" r="0.8"/><circle cx="15" cy="16.5" r="0.8"/></svg></button>
+<button aria-label="Saisie en coordonnées cartésiennes" style="width: {{btnW}}; height: {{btnH}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; padding: 0; border-radius: 10px; border: 1px solid transparent; background: transparent; color: #2b2f36; font: inherit; cursor: pointer; --fam: #1f9d55;"><svg width="{{iconPx}}" height="{{iconPx}}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="20" x2="5" y2="4"/><path d="M6.5 6.8 L5 4 L3.5 6.8"/><line x1="5" y1="20" x2="21" y2="20"/><path d="M18.2 21.5 L21 20 L18.2 18.5"/><text x="9" y="7" font-size="6.5" font-weight="700" text-anchor="middle" font-family="Inter, system-ui, sans-serif" fill="currentColor" stroke="none">Y</text><text x="19" y="16" font-size="6.5" font-weight="700" text-anchor="middle" font-family="Inter, system-ui, sans-serif" fill="currentColor" stroke="none">X</text><circle cx="14" cy="11" r="1.7" style="fill: var(--fam, #22a05a); stroke: none"/></svg></button>
+<button aria-label="Saisie en coordonnées polaires" style="width: {{btnW}}; height: {{btnH}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; padding: 0; border-radius: 10px; border: 1px solid transparent; background: transparent; color: #2b2f36; font: inherit; cursor: pointer;"><svg width="{{iconPx}}" height="{{iconPx}}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="20" x2="18" y2="6"/><path d="M17.1 9.1 L18 6 L14.9 6.9"/><path d="M10 20 A6 6 0 0 0 8.2 15.8"/><text x="7" y="9" font-size="7" font-weight="700" text-anchor="middle" font-family="Inter, system-ui, sans-serif" fill="currentColor" stroke="none">R</text><text x="18" y="18" font-size="7" font-weight="600" text-anchor="middle" font-family="Inter, system-ui, sans-serif" fill="currentColor" stroke="none">θ</text><line x1="4" y1="20" x2="21" y2="20"/></svg></button>
+<span aria-hidden="true" style="flex: 1"></span>
+<button aria-label="Bouton du bas de la barre d’outils (rôle à confirmer)" style="width: {{btnW}}; height: {{btnH}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; padding: 0; border-radius: 10px; border: 1px solid transparent; background: transparent; color: #2b2f36; font: inherit; cursor: pointer;"><svg width="{{iconPx}}" height="{{iconPx}}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="15" x2="20" y2="15"/><line x1="4" y1="19" x2="20" y2="19"/><line x1="9" y1="11" x2="9" y2="3"/><path d="M10.5 5.8 L9 3 L7.5 5.8"/><line x1="15" y1="3" x2="15" y2="11"/><path d="M13.5 8.2 L15 11 L16.5 8.2"/></svg></button>
+</div>
+<div style="flex: 1; min-width: 0; position: relative; height: 700px; background: {{canvasBg}}; overflow: hidden">
+<img src="{{drawingSrc}}" alt="Plan d’ensemble BROCHE au format A1, en traits de couleur par niveau" style="position: absolute; left: 3%; top: 3%; width: 94%; height: auto">
+<svg aria-hidden="true" viewBox="0 0 100 100" preserveAspectRatio="none" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%">
+<line x1="0" y1="41" x2="100" y2="41" stroke="{{reticule}}" stroke-width="1" vector-effect="non-scaling-stroke" opacity="0.8"/>
+<line x1="47" y1="0" x2="47" y2="100" stroke="{{reticule}}" stroke-width="1" vector-effect="non-scaling-stroke" opacity="0.8"/>
+<line x1="33" y1="58" x2="47" y2="41" stroke="#4cc38a" stroke-width="2" stroke-dasharray="6 4" vector-effect="non-scaling-stroke"/>
+</svg>
+<span aria-hidden="true" style="position: absolute; left: 47%; top: 41%; width: 12px; height: 12px; margin: -7px 0 0 -7px; border: 1.5px solid {{reticule}}; border-radius: 2px"></span>
+<span aria-hidden="true" style="position: absolute; left: 33%; top: 58%; width: 10px; height: 10px; margin: -5px 0 0 -5px">
+<svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><line x1="5" y1="0" x2="5" y2="10" stroke="#ff5a52" stroke-width="2"/><line x1="0" y1="5" x2="10" y2="5" stroke="#ff5a52" stroke-width="2"/></svg>
+</span>
+<span aria-hidden="true" style="position: absolute; right: 4px; top: 30%; width: 6px; height: 120px; border-radius: 3px; background: rgba(150, 156, 166, 0.55)"></span>
+<span aria-hidden="true" style="position: absolute; bottom: 4px; left: 40%; width: 180px; height: 6px; border-radius: 3px; background: rgba(150, 156, 166, 0.55)"></span>
+</div>
+</div>
+<div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; padding: 8px 12px; background: #ffffff; border-top: 1px solid #d9dce1">
+<div aria-label="Fonction en cours : segment de droite" style="flex: none; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: #e7f5ed; color: #17663a; --fam: #1f9d55"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="19" x2="20" y2="5"/><circle cx="4" cy="19" r="1.7" style="fill: var(--fam, #22a05a); stroke: none"/><circle cx="20" cy="5" r="1.7" style="fill: var(--fam, #22a05a); stroke: none"/></svg></div>
+<div style="flex: 1 1 320px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 14px; color: #1d1f23">Segment de droite. <span style="font-weight: 600">Désigner un point.</span></div>
+<div style="font-size: 12px; color: #555b64">Application : BROCHE · Format A1H (840 × 594) · Échelle du plan : 1</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px; padding: 8px 12px; background: #eef0f3; border-top: 1px solid #d9dce1">
+<button aria-label="Type de trait courant : continu fort" style="display: flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border-radius: 7px; border: 1px solid #d3d7de; background: #ffffff; color: #2b2f36; font: inherit; font-size: 12px; white-space: nowrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12" stroke-width="2.6"/></svg><span>Continu fort</span></button>
+<button aria-label="Calage angulaire : 15 degrés" style="display: flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border-radius: 7px; border: 1px solid #d3d7de; background: #ffffff; color: #2b2f36; font: inherit; font-size: 12px; white-space: nowrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="20" x2="20" y2="20"/><line x1="4" y1="20" x2="18" y2="10"/><path d="M12 20 A8 8 0 0 0 10.7 15.6"/></svg><span>Calé 15°</span></button>
+<button aria-label="Niveau de travail : 1" style="display: flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border-radius: 7px; border: 1px solid #d3d7de; background: #ffffff; color: #2b2f36; font: inherit; font-size: 12px; white-space: nowrap"><span aria-hidden="true" style="width: 12px; height: 12px; border-radius: 3px; background: #28b463"></span><span>Niv 1</span></button>
+<button aria-label="Zoom : 0,37" style="display: flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border-radius: 7px; border: 1px solid #d3d7de; background: #ffffff; color: #2b2f36; font: inherit; font-size: 12px; white-space: nowrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="6"/><line x1="14.5" y1="14.5" x2="20" y2="20"/></svg><span>Zoom 0,37</span></button>
+<button aria-label="Pas de la grille : 1 millimètre" style="display: flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border-radius: 7px; border: 1px solid #d3d7de; background: #ffffff; color: #2b2f36; font: inherit; font-size: 12px; white-space: nowrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg><span>Pas 1 mm</span></button>
+<button aria-label="Taille estimée du fichier : 68 kilo-octets" style="display: flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border-radius: 7px; border: 1px solid #d3d7de; background: #ffffff; color: #2b2f36; font: inherit; font-size: 12px; white-space: nowrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3 H16 L21 8 V21 H5 Z"/><rect x="8" y="3" width="7" height="5" rx="0"/><rect x="8" y="13" width="10" height="8" rx="0"/></svg><span>68 Ko</span></button>
+<button aria-label="Système de cotation : AFNOR" style="display: flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border-radius: 7px; border: 1px solid #d3d7de; background: #ffffff; color: #2b2f36; font: inherit; font-size: 12px; white-space: nowrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="8" x2="4" y2="18"/><line x1="20" y1="8" x2="20" y2="18"/><line x1="4" y1="13" x2="20" y2="13"/><path d="M6.8 11.5 L4 13 L6.8 14.5"/><path d="M17.2 14.5 L20 13 L17.2 11.5"/></svg><span>AFNOR</span></button>
+<button aria-label="Indicateur à identifier" style="display: flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border-radius: 7px; border: 1px solid #d3d7de; background: #ffffff; color: #8a9099; font: inherit; font-size: 12px; white-space: nowrap"><span>(+)</span></button>
+</div>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"fond":{"editor":"enum","options":["Graphite","Gris","Clair"],"default":"Graphite","section":"Thème"},"grandesIcones":{"editor":"boolean","default":false,"section":"Thème"},"reticule":{"editor":"color","options":["#e040fb","#3dd6f5","#ffd43b","#ff6b6b"],"default":"#e040fb","section":"Thème"},"$preview":{"width":1280,"height":920}}'>
+class Component extends DCLogic {
+renderVals() {
+const fond = this.props.fond ?? 'Graphite';
+const big = this.props.grandesIcones ?? false;
+const bg = { Graphite: '#1d2126', Gris: '#6b7079', Clair: '#f4f4f1' };
+return {
+canvasBg: bg[fond] ?? '#1d2126',
+drawingSrc: fond === 'Clair' ? '/_blob/bbe4dde5061743cbc4b205d6d3692add' : '/_blob/15f1b7d62fb9256aaac4b1fe062ebb8b',
+reticule: this.props.reticule ?? '#e040fb',
+iconPx: big ? 30 : 24,
+btnW: big ? '72px' : '60px',
+btnH: big ? '76px' : '60px',
+barW: big ? '92px' : '76px'
+};
+}
+}
+</script>
+</body>
+</html>

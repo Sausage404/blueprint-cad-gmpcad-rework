@@ -1,0 +1,140 @@
+{
+  "name": "blueprint-cad",
+  "productName": "BluePrint CAD",
+  "version": "0.1.2",
+  "description": "BluePrint CAD : logiciel libre de DAO 2D qui reprend l'interface et la façon de travailler de GMPCAD 2007.",
+  "private": true,
+  "main": "dist/main.js",
+  "scripts": {
+    "icons": "python3 scripts/export_icons.py",
+    "build": "node build.mjs",
+    "typecheck": "tsc --noEmit",
+    "start": "node build.mjs && electron .",
+    "test": "node build-tests.mjs && node --test dist-test/",
+    "dist": "node build.mjs && node quicklook/build.mjs && node windows/build.mjs && electron-builder --publish never",
+    "dist:mac": "node build.mjs && node quicklook/build.mjs && electron-builder --mac --publish never",
+    "dist:win": "node build.mjs && node windows/build.mjs && electron-builder --win --publish never"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/three": "0.187.0",
+    "electron": "^45.3.4",
+    "electron-builder": "^26.18.0",
+    "esbuild": "^0.28.2",
+    "three": "0.187.0",
+    "typescript": "^7.0.2"
+  },
+  "build": {
+    "appId": "fr.blueprint.cad",
+    "productName": "BluePrint CAD",
+    "copyright": "BluePrint CAD — logiciel libre sous licence GNU GPL v3",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "dist/**/*",
+      "!dist/**/*.map",
+      "package.json"
+    ],
+    "fileAssociations": [
+      {
+        "ext": "dxf",
+        "name": "Dessin DXF",
+        "role": "Editor"
+      },
+      {
+        "ext": "des",
+        "name": "Dessin GMPCAD",
+        "role": "Viewer"
+      }
+    ],
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64",
+            "x64"
+          ]
+        }
+      ],
+      "category": "public.app-category.graphics-design",
+      "icon": "build/icon.png",
+      "identity": null,
+      "extendInfo": {
+        "UTImportedTypeDeclarations": [
+          {
+            "UTTypeIdentifier": "com.autodesk.dxf",
+            "UTTypeDescription": "Dessin DXF",
+            "UTTypeConformsTo": [
+              "public.data"
+            ],
+            "UTTypeTagSpecification": {
+              "public.filename-extension": [
+                "dxf",
+                "DXF"
+              ],
+              "public.mime-type": [
+                "image/vnd.dxf",
+                "application/dxf"
+              ]
+            }
+          },
+          {
+            "UTTypeIdentifier": "fr.blueprint.cad.des",
+            "UTTypeDescription": "Dessin GMPCAD (.des)",
+            "UTTypeConformsTo": [
+              "public.data"
+            ],
+            "UTTypeTagSpecification": {
+              "public.filename-extension": [
+                "des",
+                "DES"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "dmg": {
+      "title": "BluePrint CAD ${version}",
+      "artifactName": "${productName}-${version}-${arch}.${ext}"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.png",
+      "extraResources": [
+        {
+          "from": "windows/build",
+          "to": "apercu",
+          "filter": [
+            "BluePrintApercu.dll"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "language": "1036",
+      "license": "../LICENSE",
+      "include": "build/installer.nsh"
+    },
+    "extraResources": [
+      {
+        "from": "../LICENSE",
+        "to": "LICENSE"
+      }
+    ],
+    "afterPack": "quicklook/apres-empaquetage.cjs"
+  },
+  "license": "GPL-3.0-or-later"
+}

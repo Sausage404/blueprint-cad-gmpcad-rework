@@ -1,0 +1,101 @@
+ligne	colonne	famille	fonction (infobulle)
+1	1	Habillage (cyan)	Insertion d'un fichier image (bmp,jpeg,tif,wmf).
+1	2	Habillage (cyan)	Modif. de la priorité d'affichage d'une image.
+1	3	Habillage (cyan)	Visibilité / invisibilité des images.
+1	4	Habillage (cyan)	Liste des images présentes dans le dessin.
+1	5	Habillage (cyan)	Ecriture d'une ligne de texte.
+1	6	Habillage (cyan)	Importation d'un fichier texte.
+1	7	Habillage (cyan)	Reprise des caractéristiques d'un texte.
+1	8	Habillage (cyan)	Modification des caractéristiques du texte.
+1	9	Habillage (cyan)	Création d'une cote linéaire.
+1	10	Habillage (cyan)	Création de cotes en série.
+1	11	Habillage (cyan)	Création de cotes superposées.
+1	12	Habillage (cyan)	Création de cotes étagées.
+1	13	Habillage (cyan)	Création d'une cote Ø de diamètre.
+1	14	Habillage (cyan)	Création d'une cote de diamètre.
+1	15	Habillage (cyan)	Création d'une cote de rayon.
+1	16	Habillage (cyan)	Création d'une cote d'angle.
+1	17	Habillage (cyan)	Affectation des tolérances à une cote.
+1	18	Habillage (cyan)	Création d'un repère de nomenclature.
+1	19	Habillage (cyan)	Création d'une flèche de coupe.
+1	20	Habillage (cyan)	Création d'une flèche de désignation.
+2	1	Création (vert)	Création d'une ellipse par diamètre et angle.
+2	2	Création (vert)	Création d'une ellipse par son centre et ses demi-axes.
+2	3	Création (vert)	Création d'une ellipse par ses diamètres.
+2	4	Création (vert)	Création d'un quart d'ellipse.
+2	5	Création (vert)	Création d'une demi-ellipse.
+2	6	Création (vert)	Création d'une polyligne.
+2	7	Création (vert)	Création d'une courbe par lissage.
+2	8	Création (vert)	Création d'une courbe par interpolation.
+2	9	Création (vert)	Courbe : insertion ou suppression de points.
+2	10	Création (vert)	Création d'un rectangle défini par 2 points.
+2	11	Création (vert)	Création d'un rectangle à angles arrondis.
+2	12	Création (vert)	Création d'un rectangle défini par 3 points.
+2	13	Création (vert)	Création d'un rectangle oblong.
+2	14	Création (vert)	Création d'un polygone régulier.
+2	15	Création (vert)	Création de traits d'axe perpendiculaires.
+2	16	Création (vert)	Création d'une zone hachurée.
+2	17	Création (vert)	Reprise des caractéristiques de hachurage.
+2	18	Création (vert)	Choix du motif de hachurage.
+2	19	Création (vert)	Addition/suppression d'un contour de hachures.
+2	20	Création (vert)	Activation / désactivation des hachures.
+3	1	Création (vert)	Création de segments enchainés.
+3	2	Création (vert)	Création d'une demi-droite.
+3	3	Création (vert)	Création d'une droite.
+3	4	Création (vert)	Création d'un cercle par centre et diamètre.
+3	5	Création (vert)	Création d'un cercle par 2 points.
+3	6	Création (vert)	Création d'un cercle tangent.
+3	7	Création (vert)	Création d'un arc par origine, centre et angle.
+3	8	Création (vert)	Création d'un arc par centre et 2 points.
+3	9	Création (vert)	Création d'un arc par 3 points.
+3	10	Création (vert)	Création d'un chanfrein.
+3	11	Création (vert)	Raccordement de deux entités (points, droites ou arcs).
+3	12	Création (vert)	Tangente à deux arcs ou points.
+3	13	Création (vert)	Perpendiculaire à un segment.
+3	14	Création (vert)	Parallèle à un segment tangent à un arc ou un point.
+3	15	Création (vert)	Parallèle à un segment à une distance donnée.
+3	16	Création (vert)	Contour parallèle à un contour.
+3	17	Création (vert)	Choix du type de point.
+3	18	Création (vert)	Création d'un point par désignation.
+3	19	Création (vert)	Création de points équidistants.
+3	20	Création (vert)	Création d'un point d'intersection.
+4	1	Modification (jaune)	Annulation de la dernière entité.
+4	2	Modification (jaune)	Effacement partiel par deux points.
+4	3	Modification (jaune)	Effacement d'une partie d'une entité.
+4	4	Modification (jaune)	Effacement d'une demi-entité.
+4	5	Modification (jaune)	Annulation d'une entité.
+4	6	Modification (jaune)	Annulation par fenêtre.
+4	7	Modification (jaune)	Récupération de la dernière entité annulée.
+4	8	Modification (jaune)	Eclatement d'un groupe en entités simples.
+4	9	Modification (jaune)	Création de groupe par fenêtre.
+4	10	Modification (jaune)	Modification de la désignation d'un groupe.
+4	11	Modification (jaune)	Placement d'un niveau par translation.
+4	12	Modification (jaune)	Placement d'un niveau par rotation.
+4	13	Modification (jaune)	Déplacement d'un point.
+4	14	Modification (jaune)	Translation d'une entité ou d'une fenêtre.
+4	15	Modification (jaune)	Rotation d'une entité ou d'une fenêtre.
+4	16	Modification (jaune)	Symétrie d'une entité ou d'une fenêtre.
+4	17	Modification (jaune)	Homothétie d'une entité ou d'une fenêtre.
+4	18	Modification (jaune)	Affinité d'une entité ou d'une fenêtre.
+4	19	Modification (jaune)	Chgmt de niveau ou duplication d'une entité ou fenêtre.
+4	20	Modification (jaune)	Modification du type de trait d'une entité ou fenêtre.
+5	1	Gestion (rouge)	Modification des paramètres de l'application.
+5	2	Gestion (rouge)	Modification du format et de l'échelle du plan.
+5	3	Gestion (rouge)	Modification de la nomenclature.
+5	4	Gestion (rouge)	Activation des options.
+5	5	Gestion (rouge)	Examen des caractéristiques d'une entité.
+5	6	Gestion (rouge)	Documentation détaillée sur une case du menu.
+5	7	Gestion (rouge)	Repérage sur tous niveaux. (pas d'infobulle dans l'original ; nom tiré de l'aide, aussi sur F3)
+5	8	Gestion (rouge)	Affichage plein format.
+5	9	Gestion (rouge)	Affichage d'une fenêtre mémorisée.
+5	10	Gestion (rouge)	Zoom.
+5	11	Gestion (rouge)	Sélection du trait continu fort.
+5	12	Gestion (rouge)	Sélection du trait pointillé fin.
+5	13	Gestion (rouge)	Sélection du trait mixte fin.
+5	14	Gestion (rouge)	Sélection du trait continu fin.
+5	15	Gestion (rouge)	Sélection par permutation du trait spécial.
+5	16	Gestion (rouge)	Activation / désactivation du calage angulaire.
+5	17	Gestion (rouge)	Changement du niveau de travail.
+5	18	Gestion (rouge)	Modification de la grille et de son origine.
+5	19	Gestion (rouge)	Changement de la couleur des niveaux.
+5	20	Gestion (rouge)	Changement de l'échelle d'un niveau.

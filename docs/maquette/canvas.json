@@ -1,0 +1,66 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-18T05:55:00Z"
+ },
+ "title": "Maquette — interface GMPCAD modernisée",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Original.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1280,
+   "h": 1024,
+   "title": "Original — GMPCAD 2007"
+  },
+  "Main.dc.html": {
+   "x": 1360,
+   "y": 0,
+   "w": 1280,
+   "h": 920,
+   "expand": "fill",
+   "title": "Moderne — écran principal (macOS)"
+  },
+  "OriginalPalette.dc.html": {
+   "x": 0,
+   "y": 1444,
+   "w": 1133,
+   "h": 289,
+   "title": "Original — palette « Menu de Base »"
+  },
+  "Palette.dc.html": {
+   "x": 1360,
+   "y": 1444,
+   "w": 1280,
+   "h": 600,
+   "title": "Moderne — palette « Menu de Base »"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "Original.dc.html",
+  "OriginalPalette.dc.html",
+  "Palette.dc.html"
+ ],
+ "notes": {
+  "titreEcran": {
+   "x": 0,
+   "y": -300,
+   "text": "Écran principal : l’original (2007) et la version modernisée",
+   "kind": "title1",
+   "maxW": 2640
+  },
+  "titrePalette": {
+   "x": 0,
+   "y": 1144,
+   "text": "Palette « Menu de Base » (barre d’espace) : mêmes cases, mêmes couleurs",
+   "kind": "title1",
+   "maxW": 2640
+  }
+ },
+ "designSystems": []
+}

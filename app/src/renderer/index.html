@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:">
+<title>BluePrint CAD</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <nav id="barre-gauche" aria-label="Barre d'outils"></nav>
+
+  <div id="zone">
+    <div id="dessin"><canvas id="canvas" aria-label="Zone de dessin"></canvas></div>
+    <div id="ascenseur-v" class="ascenseur vertical">
+      <button class="fleche haut" aria-label="Défiler vers le haut"></button>
+      <div class="piste"><div class="curseur"></div></div>
+      <button class="fleche bas" aria-label="Défiler vers le bas"></button>
+    </div>
+    <div id="ascenseur-h" class="ascenseur horizontal">
+      <button class="fleche gauche" aria-label="Défiler vers la gauche"></button>
+      <div class="piste"><div class="curseur"></div></div>
+      <button class="fleche droite" aria-label="Défiler vers la droite"></button>
+    </div>
+    <div id="coin"></div>
+  </div>
+
+  <div id="separateur-3d" hidden title="Glisser pour partager la place entre le plan et la vue 3D"></div>
+  <section id="panneau-3d" hidden aria-label="Vue 3D"></section>
+
+  <div id="fonction-courante" data-aide="Icone de la fonction en cours."></div>
+  <div id="ligne-dialogue" role="status" aria-live="polite"></div>
+  <div id="tableau-de-bord"></div>
+</div>
+
+<div id="palette" hidden></div>
+<div id="infobulle" hidden></div>
+<script src="renderer.js"></script>
+</body>
+</html>

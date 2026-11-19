@@ -1,0 +1,31 @@
+ligne	colonne	fonction (infobulle)
+1	1	Cotation de forme et position: parallélisme.
+1	2	Cotation de forme et position: perpendicularité.
+1	3	Cotation de forme et position: localisation.
+1	4	Cotation de forme et position: coaxialité/concentricité.
+1	5	Cotation de forme et position: symétrie.
+1	6	Cotation de forme et position: inclinaison.
+1	7	Cotation de forme et position: battement simple.
+1	8	Cotation de forme et position: battement double.
+1	9	Cote projetée ou exigence de l'enveloppe.
+1	10	Cotation par coordonnées.
+1	11	Trou taraudé borgne (de profil).
+1	12	Trou taraudé débouchant (de profil).
+1	13	Cotation fonctionnelle: bascule chaines horiz./vertic.
+1	14	Cotation fonctionnelle: tracé des chaines.
+1	15	Cotation fonctionnelle: régénération des chaines.
+2	1	Cotation de forme et position: planéite.
+2	2	Cotation de forme et position: rectitude.
+2	3	Cotation de forme et position: cylindricité.
+2	4	Cotation de forme et position: circularité.
+2	5	Cotation de forme et position: surface quelconque.
+2	6	Cotation de forme et position: ligne quelconque.
+2	7	Surface de référence.
+2	8	État de surface (rugosité) — infobulle non lue, d'après l'icône
+2	9	Encadrement d'une cote absolue.
+2	10	Visualisation des IT ISO du type H8, g6 etc.
+2	11	Trou taraudé vu de dessus.
+2	12	Trou borgne lisse.
+2	13	Cotation fonctionnelle: création de lien.
+2	14	Cotation fonct.: saisie des résultantes et composantes.
+2	15	Cotation fonctionnelle: résolution des chaines de cotes.

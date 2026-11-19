@@ -1,0 +1,12 @@
+original/
+
+# Fichiers de l'original GMPCAD 2007 (droits de leurs auteurs) : gardés en local pour référence, jamais publiés.
+docs/reference-gmpcad/captures/
+docs/reference-gmpcad/sources/
+docs/reference-gmpcad/conversion_des_vers_dxf/DXF/
+docs/reference-gmpcad/conversion_des_vers_dxf/exemples/
+docs/maquette/assets/broche_*.png
+
+# Captures de travail, et historique du dépôt privé d'origine (archive locale).
+captures-interface/
+.git-ancien/

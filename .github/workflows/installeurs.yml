@@ -1,0 +1,78 @@
+# Fabrique les installeurs macOS (.dmg, puces Apple et Intel) et Windows (.exe) et les joint au résultat.
+# Se lance à chaque étiquette « v… » (ex. v0.2.0) et à la demande (onglet Actions > Installeurs > Run workflow).
+name: Installeurs
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+
+  installeurs:
+    needs: tests
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - run: npm ci
+      - name: Installeur macOS
+        if: runner.os == 'macOS'
+        run: npm run dist:mac
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false' # pas de signature Apple pour l'instant (cahier des charges, 9 bis)
+      - name: Installeur Windows
+        if: runner.os == 'Windows'
+        run: npm run dist:win
+      - uses: actions/upload-artifact@v4
+        with:
+          name: installeur-${{ runner.os }}
+          path: |
+            app/release/*.dmg
+            app/release/*.exe
+          if-no-files-found: error
+
+  publication:
+    # Pour une étiquette v… : crée une version GitHub avec les installeurs.
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: installeurs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: installeurs
+          merge-multiple: true
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: installeurs/*
+          prerelease: true
+          body: |
+            Version de test. Voir « Installer et tester » dans le README pour l'installation sur Mac et Windows.
